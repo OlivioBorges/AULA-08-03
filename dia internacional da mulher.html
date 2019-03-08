@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+<style>
+		div#hide {
+		  transition: all linear 0.5s;
+		  background-color: lightblue;
+		  height: 50px;
+		  width: 50%;
+		  position: relative;
+		  top: 0;
+		  left: 0;
+		}
+
+		.ng-hide {
+		  height: 0;
+		  width: 0;
+		  background-color: transparent;
+		  top:-200px;
+		  left: 200px;
+		}
+</style>
+</head>
+<body>
+
+<div ng-app="">
+
+	<h1>Dia Internacional da Mulher</h1>
+
+	<h2>Introdução</h2>
+	<p>Comemorado desde o início do do séc. XX, este dia foi oficializado pela Organização das Nações Unidas (ONU )em 1975. Hoje, a data é cada vez mais lembrada como um dia para reivindicar igualdade de gênero e com protestos ao redor do mundo - aproximando-a de sua origem na luta de mulheres que trabalhavam em fábricas nos Estados Unidos e em alguns países da Europa.</p>
+
+	<h2>Origem</h2>
+
+	<p>Se fosse possível fazer uma linha do tempo dos primeiros "dias das mulheres" que surgiram no mundo, ela começaria possivelmente com a grande passeata das mulheres em 26 de fevereiro de 1909, em Nova York. Naquele dia, cerca de 15 mil mulheres marcharam nas ruas da cidade por melhores condições de trabalho - na época, as jornadas para elas poderiam chegar a 16h por dia, seis dias por semana e, não raro, incluíam também os domingos. Ali teria sido celebrado pela primeira vez o "Dia Nacional da Mulher" americano.</p>
+	<!--
+	<label for="nome">Digite o nome de uma mulher que você acha incrível.</label>
+	<input id="nome" type="text" name="nome" ng-model="nome">
+  	<p>Name : <input type="checkbox" ng-model="name"></p>
+  	<div id="hide" nd-hide="name"><h1>{{nome}}</h1></div>
+
+  	<script>
+	var app = angular.module('myApp', ['ngAnimate']);
+	</script>
+	-->
+
+
+
+
+	<p>Digite o nome de uma mulher que você admira</p>
+	<input type="text" ng-model="name" placeholder="Digite aqui">
+	<h1>Presione aqui para exibir. <input type="checkbox" ng-model="myCheck"></h1>
+
+	<div id="hide" ng-hide="myCheck">
+
+	<p>A {{name}} com certeza é muito maravilhosa.</p>
+
+	</div>
+
+	<h3>Era para o site iniciar sem o a div azul e ao usuário clicar no checkbox aparecer, mas não consegui </h3>
+
+
+
+</div>
+
+</body>
+</html>
